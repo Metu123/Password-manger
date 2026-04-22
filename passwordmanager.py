@@ -14,7 +14,7 @@ def load_or_create_key(key_path: Path) -> bytes:
     key = Fernet.generate_key()
     key_path.write_bytes(key)
 
-    # Restrict permissions (important on Unix systems)
+    
     try:
         os.chmod(key_path, 0o600)
     except Exception:
