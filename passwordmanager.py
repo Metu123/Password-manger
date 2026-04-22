@@ -53,7 +53,7 @@ def view_passwords(file_path: Path, fernet: Fernet):
         print("No password file found.")
         return
 
-    print("\n🔐 Stored Credentials:\n" + "-" * 30)
+    print("\n Stored Credentials:\n" + "-" * 30)
 
     with file_path.open("r") as f:
         for i, line in enumerate(f, 1):
