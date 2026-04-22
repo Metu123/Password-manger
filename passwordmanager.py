@@ -45,7 +45,7 @@ def save_password(file_path: Path, fernet: Fernet):
     with file_path.open("a") as f:
         f.write(encrypted + "\n")
 
-    print("✅ Password saved securely.")
+    print(" Password saved securely.")
 
 
 def view_passwords(file_path: Path, fernet: Fernet):
