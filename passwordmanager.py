@@ -62,7 +62,7 @@ def view_passwords(file_path: Path, fernet: Fernet):
                 website, username, password = decrypted.split("|")
                 print(f"{i}. {website} | {username} | {password}")
             else:
-                print(f"{i}. ⚠️ Corrupted or invalid entry")
+                print(f"{i}. Corrupted or invalid entry")
 
     print("-" * 30)
 
